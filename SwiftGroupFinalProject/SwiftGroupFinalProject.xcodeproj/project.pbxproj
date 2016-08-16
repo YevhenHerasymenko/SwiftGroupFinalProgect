@@ -17,6 +17,7 @@
 		C490231B1D63721400170585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49023191D63721400170585 /* LaunchScreen.storyboard */; };
 		C49023261D63721400170585 /* SwiftGroupFinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49023251D63721400170585 /* SwiftGroupFinalProjectTests.swift */; };
 		C49023311D63721400170585 /* SwiftGroupFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49023301D63721400170585 /* SwiftGroupFinalProjectUITests.swift */; };
+		DFC339681D63967500A47E32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC339671D63967500A47E32 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C49023301D63721400170585 /* SwiftGroupFinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGroupFinalProjectUITests.swift; sourceTree = "<group>"; };
 		C49023321D63721400170585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB14F8848FB00B40FC5BBCE8 /* Pods-SwiftGroupFinalProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGroupFinalProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGroupFinalProjectUITests/Pods-SwiftGroupFinalProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DFC339671D63967500A47E32 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA92E8623053F77A3755B67B /* Pods-SwiftGroupFinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGroupFinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGroupFinalProject/Pods-SwiftGroupFinalProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				C49023101D63721400170585 /* AppDelegate.swift */,
+				DFC339661D63964700A47E32 /* Resources */,
 				C49023121D63721400170585 /* ViewController.swift */,
 				C49023141D63721400170585 /* Main.storyboard */,
 				C49023171D63721400170585 /* Assets.xcassets */,
@@ -163,6 +166,14 @@
 				C49023321D63721400170585 /* Info.plist */,
 			);
 			path = SwiftGroupFinalProjectUITests;
+			sourceTree = "<group>";
+		};
+		DFC339661D63964700A47E32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFC339671D63967500A47E32 /* Constants.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +440,7 @@
 			files = (
 				C49023131D63721400170585 /* ViewController.swift in Sources */,
 				C49023111D63721400170585 /* AppDelegate.swift in Sources */,
+				DFC339681D63967500A47E32 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
