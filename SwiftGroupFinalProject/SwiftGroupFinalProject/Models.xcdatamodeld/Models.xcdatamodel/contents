@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Genre" representedClassName=".Genre" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="movie" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Movie" inverseName="ganre" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <entity name="Movie" representedClassName=".Movie" syncable="YES">
+        <attribute name="adult" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="backdropPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="budget" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="homepage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imdbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalLanguage" optional="YES" attributeType="String" minValueString="2" maxValueString="2" syncable="YES"/>
+        <attribute name="originalTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="posterPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="revenue" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="runtime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="voteAverage" optional="YES" attributeType="Float" maxValueString="10" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="voteCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="ganre" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Genre" inverseName="movie" inverseEntity="Genre" syncable="YES"/>
+        <relationship name="productionCompanies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductionCompanie" inverseName="movies" inverseEntity="ProductionCompanie" syncable="YES"/>
+        <relationship name="productionCountries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductionCountrie" syncable="YES"/>
+        <relationship name="spokenLanguages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpokenLenguage" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="adult" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="biography" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deathday" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="homepage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imdbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeOfBirth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="profilePath" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ProductionCompanie" representedClassName=".ProductionCompanie" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="movies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Movie" inverseName="productionCompanies" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <entity name="ProductionCountrie" representedClassName=".ProductionCountrie" syncable="YES">
+        <attribute name="iso3166_1" optional="YES" attributeType="String" minValueString="2" maxValueString="2" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SpokenLenguage" representedClassName=".SpokenLenguage" syncable="YES">
+        <attribute name="iso639_1" optional="YES" attributeType="String" minValueString="2" maxValueString="2" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Genre" positionX="-9" positionY="81" width="128" height="90"/>
+        <element name="Movie" positionX="-9" positionY="36" width="128" height="405"/>
+        <element name="ProductionCompanie" positionX="0" positionY="171" width="128" height="90"/>
+        <element name="ProductionCountrie" positionX="18" positionY="198" width="128" height="75"/>
+        <element name="SpokenLenguage" positionX="27" positionY="216" width="128" height="75"/>
+        <element name="Person" positionX="45" positionY="225" width="128" height="225"/>
+    </elements>
+</model>
